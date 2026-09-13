@@ -1,6 +1,6 @@
 # Product Requirements Document (PRD)
 
-# Money DNA
+# Econiverse
 ### Sistem Pencatatan dan Simulasi Keuangan Pribadi Berbasis Financial Alternate Universe
 
 ---
@@ -9,7 +9,7 @@
 
 | Item | Detail |
 |--------|--------|
-| Nama Produk | Money DNA |
+| Nama Produk | Econiverse |
 | Versi | 1.0 |
 | Platform | Web |
 | Frontend | Next.js |
