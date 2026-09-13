@@ -1,40 +1,220 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌌 ECONIVERSE
 
-## Getting Started
+> "Every financial decision creates a different future."
 
-First, run the development server:
+Econiverse adalah aplikasi pencatatan keuangan pribadi berbasis web yang tidak hanya membantu pengguna mencatat pemasukan dan pengeluaran, tetapi juga mensimulasikan berbagai kemungkinan kondisi keuangan melalui fitur unggulan **Financial Alternate Universe**.
+
+---
+
+## 📖 Tentang Proyek
+
+Sebagian besar aplikasi keuangan hanya menunjukkan kondisi keuangan saat ini.
+
+Econiverse melangkah lebih jauh dengan membantu pengguna memahami:
+
+- Dampak dari keputusan finansial.
+- Potensi penghematan.
+- Konsekuensi dari kebiasaan konsumsi.
+- Simulasi kondisi keuangan alternatif.
+
+Dengan demikian pengguna dapat mengambil keputusan ekonomi yang lebih baik berdasarkan data yang dimiliki.
+
+---
+
+## ✨ Fitur Utama
+
+### 🔐 Authentication
+
+- Register
+- Login
+- Logout
+
+### 💰 Transaction Management
+
+- Tambah transaksi
+- Edit transaksi
+- Hapus transaksi
+- Riwayat transaksi
+
+### 📊 Dashboard
+
+- Total pemasukan
+- Total pengeluaran
+- Saldo
+- Grafik transaksi
+- Ringkasan keuangan
+
+### 🗂️ Category Management
+
+- Makanan
+- Transportasi
+- Pendidikan
+- Hiburan
+- Belanja
+- Kesehatan
+
+### 🌌 Financial Alternate Universe
+
+Fitur utama yang membedakan Econiverse dari aplikasi keuangan lainnya.
+
+Contoh simulasi:
+
+#### Skenario 1
+
+```text
+Kopi Harian
+Rp25.000/hari
+```
+
+Simulasi:
+
+```text
+Tidak membeli kopi selama 6 bulan
+```
+
+Hasil:
+
+```text
+Potensi tabungan:
+Rp4.500.000
+```
+
+#### Skenario 2
+
+```text
+Belanja Online
+Rp500.000/bulan
+```
+
+Simulasi:
+
+```text
+Mengurangi pengeluaran 50%
+```
+
+Hasil:
+
+```text
+Potensi penghematan:
+Rp3.000.000/tahun
+```
+
+---
+
+## 🎯 Tujuan Proyek
+
+- Membantu pengguna mengelola keuangan pribadi.
+- Memberikan insight terhadap pola pengeluaran.
+- Membantu pengguna memahami konsekuensi dari keputusan finansial.
+- Menyediakan simulasi ekonomi berbasis data transaksi.
+
+---
+
+## 👥 Target Pengguna
+
+- Mahasiswa
+- Freelancer
+- Karyawan
+- Pengguna yang ingin meningkatkan literasi keuangan
+
+---
+
+## 🏗️ Tech Stack
+
+### Frontend
+
+- Next.js
+- TypeScript
+- Tailwind CSS
+
+### Backend
+
+- Next.js API Routes
+
+### Database
+
+- PostgreSQL
+
+### Version Control
+
+- Git & GitHub
+
+---
+
+## 📂 Struktur Proyek
+
+
+```
+
+---
+
+## 🚀 Instalasi
+
+Clone repository:
+
+```bash
+git clone https://github.com/username/econiverse.git
+```
+
+Masuk ke folder project:
+
+```bash
+cd econiverse
+```
+
+Install dependency:
+
+```bash
+npm install
+```
+
+Jalankan project:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Buka browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📌 MVP Features
 
-To learn more about Next.js, take a look at the following resources:
+- [x] Login
+- [x] Register
+- [x] CRUD Transaksi
+- [x] Dashboard
+- [x] Grafik Keuangan
+- [x] Financial Alternate Universe
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🔮 Future Development
 
-## Deploy on Vercel
+- Financial Health Score
+- AI Financial Assistant
+- Budget Planning
+- Target Tabungan
+- Export PDF
+- Mobile App
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# PTKOM---EKONOMI
->>>>>>> 1946126003766dc6f33467930fab6bbfcb350aed
+## 👨‍💻 Team
+
+| Role | Responsibility |
+|--------|--------|
+| Product Master | Requirement, Timeline, Monitoring, Testing & Validation|
+| Frontend Developer | UI & UX |
+| Backend Developer | API Development, Database Design |
+
+
+---
+
+## 📄 License
+
+This project was developed for academic purposes and learning activities.
