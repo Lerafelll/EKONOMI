@@ -315,11 +315,9 @@ Fitur yang dapat ditambahkan pada versi berikutnya:
 
 | Role | Tanggung Jawab |
 |--------|--------|
-| Product Master | Requirement, Timeline, Monitoring |
+| Product Master | Requirement, Timeline, Monitoring, Pengujian Sistem |
 | Frontend Developer | UI/UX dan Implementasi Next.js |
-| Backend Developer | API dan Business Logic |
-| Database Engineer | PostgreSQL dan ERD |
-| QA Tester | Pengujian Sistem |
+| Backend Developer | API, Business Logic, PostgreSQL |
 
 ---
 
