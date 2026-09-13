@@ -1,59 +1,49 @@
-+-------------+
-|    USERS    |
-+-------------+
-| id (PK)     |
-| nama        |
-| email       |
-| password    |
-| created_at  |
-+-------------+
-       |
-       | 1
-       |
-       | N
-+------------------+
-|   TRANSACTIONS   |
-+------------------+
-| id (PK)          |
-| user_id (FK)     |
-| category_id (FK) |
-| type             |
-| amount           |
-| description      |
-| transaction_date |
-| created_at       |
-+------------------+
-       |
-       | N
-       |
-       | 1
-+--------------+
-|  CATEGORIES  |
-+--------------+
-| id (PK)      |
-| name         |
-+--------------+
+# ERD Econiverse
 
+```mermaid
+erDiagram
 
-+-------------+
-|    USERS    |
-+-------------+
-| id (PK)     |
-+-------------+
-       |
-       | 1
-       |
-       | N
-+----------------------+
-|     SIMULATIONS      |
-+----------------------+
-| id (PK)              |
-| user_id (FK)         |
-| title                |
-| scenario_type        |
-| current_amount       |
-| percentage_change    |
-| duration_month       |
-| predicted_saving     |
-| created_at           |
-+----------------------+
+USERS ||--o{ TRANSACTIONS : has
+CATEGORIES ||--o{ TRANSACTIONS : categorizes
+USERS ||--o{ SIMULATIONS : creates
+USERS ||--o{ FINANCIAL_GOALS : owns
+
+USERS {
+    uuid id PK
+    string nama
+    string email
+    string password
+    timestamp created_at
+}
+
+CATEGORIES {
+    int id PK
+    string name
+}
+
+TRANSACTIONS {
+    uuid id PK
+    uuid user_id FK
+    int category_id FK
+    string type
+    decimal amount
+    text description
+    date transaction_date
+}
+
+SIMULATIONS {
+    uuid id PK
+    uuid user_id FK
+    string title
+    string scenario_type
+    decimal predicted_saving
+}
+
+FINANCIAL_GOALS {
+    uuid id PK
+    uuid user_id FK
+    string goal_name
+    decimal target_amount
+    decimal current_amount
+}
+```
