@@ -1,326 +1,363 @@
 # Product Requirements Document (PRD)
 
 # Econiverse
-### Sistem Pencatatan dan Simulasi Keuangan Pribadi Berbasis Financial Alternate Universe
+### Platform Analisis Perilaku Ekonomi Berbasis AI
 
 ---
 
-## 1. Informasi Produk
+## Document Information
 
 | Item | Detail |
 |--------|--------|
-| Nama Produk | Econiverse |
-| Versi | 1.0 |
-| Platform | Web |
-| Frontend | Next.js |
-| Backend | Next.js API Routes |
-| Database | PostgreSQL |
-| Target Pengguna | Mahasiswa, Freelancer, Karyawan |
+| Product Name | Econiverse |
+| Version | 1.0 |
+| Status | Draft |
+| Platform | Web Application |
+| Product Master | Team Econiverse |
 
 ---
 
-# 2. Latar Belakang
+# 1. Product Overview
 
-Sebagian besar aplikasi pencatatan keuangan hanya berfungsi sebagai alat untuk mencatat pemasukan dan pengeluaran. Pengguna dapat melihat kondisi keuangan saat ini, namun belum dapat memahami dampak dari keputusan finansial yang mereka ambil.
+## Product Vision
 
-Money DNA hadir sebagai solusi yang tidak hanya mencatat transaksi, tetapi juga membantu pengguna menganalisis berbagai kemungkinan kondisi keuangan melalui fitur utama **Financial Alternate Universe**.
-
-Fitur ini memungkinkan pengguna melihat simulasi dari keputusan finansial yang berbeda sehingga dapat membantu dalam pengambilan keputusan ekonomi yang lebih baik.
+Membantu pengguna memahami, memperbaiki, dan mengembangkan kebiasaan ekonomi melalui analisis perilaku, rekomendasi AI, dan sistem gamifikasi yang menarik.
 
 ---
 
-# 3. Visi Produk
+## Problem Statement
 
-Menjadi platform pencatatan keuangan yang mampu membantu pengguna memahami dampak jangka pendek dan jangka panjang dari setiap keputusan finansial yang mereka ambil.
+Banyak orang mengalami kesulitan dalam mengelola perilaku ekonomi mereka karena:
 
----
+- Tidak memahami pola konsumsi pribadi.
+- Tidak mengetahui kelebihan dan kekurangan kebiasaan finansial mereka.
+- Sulit mempertahankan konsistensi dalam menabung.
+- Kurangnya motivasi untuk memperbaiki kebiasaan ekonomi.
 
-# 4. Tujuan Produk
-
-- Membantu pengguna mengelola keuangan pribadi.
-- Menyediakan pencatatan pemasukan dan pengeluaran.
-- Menampilkan kondisi keuangan secara visual.
-- Memberikan simulasi alternatif terhadap keputusan finansial pengguna.
-- Membantu pengguna mengambil keputusan ekonomi yang lebih rasional.
+Sebagian besar aplikasi hanya mencatat transaksi tanpa membantu pengguna memahami alasan di balik perilaku mereka.
 
 ---
 
-# 5. Target Pengguna
+## Solution
 
-## Mahasiswa
+Econiverse menggabungkan:
+
+- Economic Personality Test
+- AI Financial Coach
+- Habit Tracking
+- Streak System
+- Achievement System
+
+untuk membantu pengguna membangun kebiasaan ekonomi yang lebih baik.
+
+---
+
+# 2. Target Users
+
+## Primary Users
+
+### Mahasiswa
 
 Karakteristik:
 
-- Memiliki uang bulanan terbatas.
+- Pendapatan terbatas.
+- Sedang belajar mengelola keuangan.
+
+### Freelancer
+
+Karakteristik:
+
+- Pendapatan tidak stabil.
 - Membutuhkan kontrol pengeluaran.
-- Ingin mengetahui dampak dari kebiasaan konsumtif.
 
----
-
-## Freelancer
+### Karyawan
 
 Karakteristik:
 
-- Pendapatan tidak tetap.
-- Membutuhkan perencanaan keuangan.
+- Pendapatan tetap.
+- Ingin meningkatkan kualitas finansial.
 
 ---
 
-## Karyawan
+# 3. Product Goals
 
-Karakteristik:
+### Goal 1
 
-- Memiliki pemasukan rutin.
-- Ingin mengelola pengeluaran dan tabungan.
+Membantu pengguna mengenali tipe perilaku ekonomi mereka.
 
----
+### Goal 2
 
-# 6. Problem Statement
+Meningkatkan kesadaran terhadap kebiasaan konsumsi.
 
-Pengguna sering mengalami kesulitan dalam:
+### Goal 3
 
-- Mengetahui pola pengeluaran.
-- Mengontrol kebiasaan konsumtif.
-- Melihat dampak dari keputusan finansial.
-- Membuat perencanaan keuangan jangka panjang.
+Membantu pengguna membangun kebiasaan menabung yang konsisten.
 
----
+### Goal 4
 
-# 7. Solusi
-
-Money DNA menyediakan:
-
-- Dashboard keuangan.
-- Pencatatan transaksi.
-- Analisis pemasukan dan pengeluaran.
-- Simulasi Financial Alternate Universe.
+Memberikan rekomendasi yang dipersonalisasi melalui AI Agent.
 
 ---
 
-# 8. Fitur Utama
-
-## 8.1 Autentikasi
-
-### Deskripsi
-
-Pengguna dapat membuat akun dan masuk ke sistem.
-
-### Fitur
-
-- Register
-- Login
-- Logout
+# 4. Core Features
 
 ---
 
-## 8.2 Dashboard
+## 4.1 Economic Personality Test
 
-### Deskripsi
+### Description
 
-Menampilkan ringkasan kondisi keuangan pengguna.
+Pengguna mengisi survei yang dirancang untuk mengidentifikasi tipe perilaku ekonomi.
 
-### Informasi yang Ditampilkan
+### Output
 
-- Total pemasukan
-- Total pengeluaran
-- Saldo saat ini
-- Grafik transaksi
-- Ringkasan aktivitas
+Sistem menentukan personality pengguna.
 
----
+### Personality Types
 
-## 8.3 Manajemen Transaksi
+- The Saver
+- The Investor
+- The Rational Planner
+- The Impulsive Buyer
+- The Experience Seeker
+- The Risk Taker
 
-### Deskripsi
+### User Story
 
-Pengguna dapat mengelola transaksi keuangan.
-
-### Fitur
-
-- Tambah transaksi
-- Edit transaksi
-- Hapus transaksi
-- Lihat riwayat transaksi
+Sebagai pengguna, saya ingin mengetahui tipe perilaku ekonomi saya agar dapat memahami kebiasaan finansial saya.
 
 ---
 
-## 8.4 Kategori Transaksi
+## 4.2 AI Financial Coach
 
-### Kategori Default
+### Description
 
-- Makanan
-- Transportasi
-- Pendidikan
-- Hiburan
-- Belanja
-- Kesehatan
-- Lainnya
+AI Agent menganalisis aktivitas dan hasil survei pengguna.
 
----
+### AI Analysis
 
-# 9. Financial Alternate Universe
+- Pola konsumsi
+- Konsistensi menabung
+- Kebiasaan impulsif
+- Kelebihan finansial
+- Kekurangan finansial
 
-## Deskripsi
+### User Story
 
-Fitur utama yang membedakan Money DNA dari aplikasi pencatatan keuangan lainnya.
-
-Sistem akan membuat simulasi berdasarkan data transaksi pengguna dan menampilkan kemungkinan kondisi keuangan apabila pengguna mengambil keputusan yang berbeda.
+Sebagai pengguna, saya ingin mendapatkan saran yang sesuai dengan kondisi saya agar dapat memperbaiki kebiasaan ekonomi saya.
 
 ---
 
-## Contoh Skenario 1
+## 4.3 Daily Mission
 
-### Data Aktual
+### Description
+
+Sistem memberikan misi harian kepada pengguna.
+
+### Example
+
+- Menabung Rp5.000
+- Tidak melakukan pembelian impulsif
+- Menyelesaikan refleksi harian
+
+### Reward
+
+XP dan Progress.
+
+---
+
+## 4.4 Streak System
+
+### Description
+
+Mencatat konsistensi aktivitas pengguna.
+
+### Example
+
+- Saving Streak
+- No Impulse Buying Streak
+- Daily Check-In Streak
+
+### User Story
+
+Sebagai pengguna, saya ingin melihat progres saya agar lebih termotivasi untuk mempertahankan kebiasaan baik.
+
+---
+
+## 4.5 Achievement System
+
+### Description
+
+Memberikan penghargaan berdasarkan pencapaian pengguna.
+
+### Example Badges
+
+- First Saving
+- 7 Day Streak
+- Smart Saver
+- Financial Explorer
+- Financial Master
+
+---
+
+## 4.6 Personality Evolution
+
+### Description
+
+Menampilkan perubahan personality pengguna dari waktu ke waktu.
+
+### Example
 
 ```text
-Kopi Harian
-Rp25.000/hari
+Januari:
+Impulsive Buyer
+
+Maret:
+Balanced Spender
+
+Juni:
+Rational Planner
 ```
 
-### Simulasi
+### User Story
+
+Sebagai pengguna, saya ingin melihat perkembangan diri saya agar mengetahui apakah kebiasaan ekonomi saya membaik.
+
+---
+
+## 4.7 Economic Dashboard
+
+### Description
+
+Dashboard utama yang menampilkan:
+
+- Personality Type
+- AI Insight
+- Streak Progress
+- Achievement
+- Daily Mission
+
+---
+
+# 5. User Journey
+
+## New User
 
 ```text
-Jika tidak membeli kopi selama 6 bulan
-```
-
-### Hasil
-
-```text
-Potensi tabungan:
-Rp4.500.000
+Register
+↓
+Login
+↓
+Economic Personality Test
+↓
+Get Personality Result
+↓
+Receive AI Analysis
+↓
+Start Daily Mission
+↓
+Build Streak
+↓
+Unlock Achievement
 ```
 
 ---
 
-## Contoh Skenario 2
+# 6. MVP Scope
 
-### Data Aktual
+Fitur yang wajib tersedia pada versi pertama:
 
-```text
-Belanja Online
-Rp500.000/bulan
-```
-
-### Simulasi
-
-```text
-Jika pengeluaran dikurangi 50%
-```
-
-### Hasil
-
-```text
-Potensi penghematan:
-Rp3.000.000/tahun
-```
-
----
-
-## Contoh Skenario 3
-
-### Data Aktual
-
-```text
-Tabungan
-Rp0
-```
-
-### Simulasi
-
-```text
-Menabung Rp10.000/hari
-```
-
-### Hasil
-
-```text
-1 Tahun:
-Rp3.650.000
-```
-
----
-
-# 10. User Story
-
-## US-01
-
-Sebagai pengguna, saya ingin membuat akun agar dapat menggunakan sistem.
-
----
-
-## US-02
-
-Sebagai pengguna, saya ingin mencatat pemasukan agar kondisi keuangan saya terdokumentasi.
-
----
-
-## US-03
-
-Sebagai pengguna, saya ingin mencatat pengeluaran agar dapat mengetahui ke mana uang saya digunakan.
-
----
-
-## US-04
-
-Sebagai pengguna, saya ingin melihat dashboard agar dapat memahami kondisi keuangan saya secara cepat.
-
----
-
-## US-05
-
-Sebagai pengguna, saya ingin membuat simulasi Financial Alternate Universe agar dapat memahami dampak keputusan finansial yang berbeda.
-
----
-
-# 11. MVP (Minimum Viable Product)
-
-Fitur yang wajib selesai pada versi pertama.
-
-- Register
-- Login
-- Logout
+- Authentication
+- Personality Test
+- Personality Result
+- AI Insight
+- Daily Mission
+- Streak System
 - Dashboard
-- CRUD Transaksi
-- Kategori Transaksi
-- Grafik Keuangan
-- Financial Alternate Universe
+- Achievement
 
 ---
 
-# 12. Kriteria Keberhasilan
+# 7. Success Metrics
 
-Produk dianggap berhasil apabila:
+## User Engagement
 
-- Pengguna dapat mencatat transaksi dengan mudah.
-- Dashboard dapat menampilkan kondisi keuangan secara akurat.
-- Simulasi Financial Alternate Universe berjalan sesuai perhitungan.
-- Sistem dapat digunakan tanpa error pada browser modern.
+- Pengguna membuka aplikasi minimal 3 kali per minggu.
 
----
+## Streak Retention
 
-# 13. Future Development
+- Minimal 50% pengguna mempertahankan streak selama 7 hari.
 
-Fitur yang dapat ditambahkan pada versi berikutnya:
+## Personality Completion
 
-- AI Financial Advisor
-- Target Tabungan
-- Analisis Kebiasaan Pengeluaran
-- Export PDF
-- Multi Currency
-- Notifikasi Pengingat Keuangan
+- Minimal 80% pengguna menyelesaikan personality test.
 
 ---
 
-# 14. Tim Pengembang
+# 8. Future Features
 
-| Role | Tanggung Jawab |
+## AI Chat Coach
+
+Pengguna dapat berdiskusi langsung dengan AI.
+
+---
+
+## Community Challenge
+
+Tantangan kelompok antar pengguna.
+
+---
+
+## Economic Leaderboard
+
+Peringkat berdasarkan konsistensi dan pencapaian.
+
+---
+
+## Habit Prediction
+
+AI memprediksi kebiasaan ekonomi pengguna di masa depan.
+
+---
+
+# 9. Tech Stack
+
+## Frontend
+
+- Next.js
+- TypeScript
+- Tailwind CSS
+
+## Backend
+
+- Next.js API Routes
+
+## Database
+
+- PostgreSQL
+
+## Authentication
+
+- NextAuth
+
+## AI
+
+- OpenAI API / Local AI Model
+
+---
+
+# 10. Development Team
+
+| Role | Responsibility |
 |--------|--------|
-| Product Master | Requirement, Timeline, Monitoring, Pengujian Sistem |
-| Frontend Developer | UI/UX dan Implementasi Next.js |
-| Backend Developer | API, Business Logic, PostgreSQL |
+| Product Master | Requirement & Planning |
+| Frontend Developer | UI/UX Development |
+| Backend Developer | API & Business Logic |
+| Database Engineer | Database Design |
+| QA Tester | Testing & Validation |
 
 ---
 
-# Status Dokumen
+# Status
 
 Draft Version 1.0
