@@ -153,7 +153,7 @@ Rp3.000.000/tahun
 Clone repository:
 
 ```bash
-git clone https://github.com/username/econiverse.git
+git clone https://github.com/
 ```
 
 Masuk ke folder project:
