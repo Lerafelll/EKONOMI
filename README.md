@@ -106,24 +106,22 @@ Survei berbasis perilaku ekonomi pengguna.
 Mengelompokkan pengguna ke dalam tipe kepribadian ekonomi tertentu.
 Menampilkan profil dan karakteristik finansial pengguna.
 
-🎭 Role Personality
+🎭 **Role Personality**
 🐿️ The Saver
 
 Karakteristik:
-
-Suka menabung
-Jarang membeli barang impulsif
-Memikirkan masa depan
+-Suka menabung
+-Jarang membeli barang impulsif
+-Memikirkan masa depan
 
 Kelebihan:
-
-Keuangan stabil
-Risiko rendah
+-Keuangan stabil
+-Risiko rendah
 
 Kekurangan:
+-Kadang terlalu pelit
+-Sulit menikmati hasil kerja
 
-Kadang terlalu pelit
-Sulit menikmati hasil kerja
 📈 The Investor
 
 Karakteristik:
