@@ -106,6 +106,87 @@ Survei berbasis perilaku ekonomi pengguna.
 Mengelompokkan pengguna ke dalam tipe kepribadian ekonomi tertentu.
 Menampilkan profil dan karakteristik finansial pengguna.
 
+🎭 Role Personality
+🐿️ The Saver
+
+Karakteristik:
+
+Suka menabung
+Jarang membeli barang impulsif
+Memikirkan masa depan
+
+Kelebihan:
+
+Keuangan stabil
+Risiko rendah
+
+Kekurangan:
+
+Kadang terlalu pelit
+Sulit menikmati hasil kerja
+📈 The Investor
+
+Karakteristik:
+
+Suka mengembangkan aset
+Berani mengambil risiko terukur
+Berpikir jangka panjang
+
+Kelebihan:
+
+Potensi pertumbuhan aset tinggi
+
+Kekurangan:
+
+Bisa terlalu optimis
+🛍️ The Impulsive Buyer
+
+Karakteristik:
+
+Sering membeli berdasarkan keinginan sesaat
+Mudah tergoda diskon
+
+Kelebihan:
+
+Fleksibel
+Menikmati pengalaman
+
+Kekurangan:
+
+Pengeluaran sulit dikontrol
+🧠 The Rational Planner
+
+Karakteristik:
+
+Membuat anggaran
+Selalu membandingkan harga
+
+Kelebihan:
+
+Sangat efisien
+
+Kekurangan:
+
+Terlalu lama mengambil keputusan
+🎉 The Experience Seeker
+
+Karakteristik:
+
+Lebih suka membeli pengalaman daripada barang
+
+Contoh:
+
+Travel
+Konser
+Nongkrong
+Workshop
+🚀 The Risk Taker
+
+Karakteristik:
+
+Berani mencoba peluang baru
+Berani mengambil risiko ekonomi
+
 ### 🤖 AI Financial Agent
 Menganalisis pola perilaku pengguna secara otomatis.
 Mengidentifikasi kelebihan dan kekurangan dalam kebiasaan finansial pengguna.
