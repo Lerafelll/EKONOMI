@@ -153,7 +153,7 @@ Rp3.000.000/tahun
 Clone repository:
 
 ```bash
-git clone https://github.com/
+git clone https://github.com/Lerafelll/EKONOMI.git
 ```
 
 Masuk ke folder project:
