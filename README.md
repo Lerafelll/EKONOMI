@@ -101,17 +101,17 @@ Rp3.000.000/tahun
 
 ---
 
-###🧠 Economic Personality Test
+### 🧠 Economic Personality Test
 Survei berbasis perilaku ekonomi pengguna.
 Mengelompokkan pengguna ke dalam tipe kepribadian ekonomi tertentu.
 Menampilkan profil dan karakteristik finansial pengguna.
 
-###🤖 AI Financial Agent
+### 🤖 AI Financial Agent
 Menganalisis pola perilaku pengguna secara otomatis.
 Mengidentifikasi kelebihan dan kekurangan dalam kebiasaan finansial pengguna.
 Memberikan rekomendasi dan saran yang dipersonalisasi.
 
-###🔥 Financial Streak System
+### 🔥 Financial Streak System
 Mencatat konsistensi pengguna dalam menabung dan mencapai target finansial.
 Memberikan penghargaan berupa badge, level, atau achievement.
 Meningkatkan motivasi pengguna agar tetap aktif dan disiplin dalam mengelola keuangan.
