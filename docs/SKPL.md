@@ -1,381 +1,417 @@
 # Spesifikasi Kebutuhan Perangkat Lunak (SKPL)
 
 # Econiverse
-### Sistem Pencatatan dan Simulasi Keuangan Pribadi Berbasis Financial Alternate Universe
+### Platform Analisis Perilaku Ekonomi Berbasis AI
 
 ---
 
-## 1. Pendahuluan
+# 1. Pendahuluan
 
-### 1.1 Tujuan
+## 1.1 Tujuan
 
-Dokumen ini bertujuan untuk mendefinisikan kebutuhan perangkat lunak pada aplikasi **Econiverse**, sehingga dapat menjadi acuan bagi tim pengembang dalam proses perancangan, implementasi, pengujian, dan pemeliharaan sistem.
+Dokumen ini menjelaskan kebutuhan perangkat lunak yang diperlukan dalam pengembangan aplikasi Econiverse.
 
----
-
-### 1.2 Ruang Lingkup
-
-Econiverse merupakan aplikasi berbasis web yang digunakan untuk:
-
-- Mencatat pemasukan dan pengeluaran.
-- Mengelola transaksi keuangan.
-- Menampilkan kondisi keuangan pengguna.
-- Memberikan simulasi alternatif melalui fitur Financial Alternate Universe.
-- Membantu pengguna memahami dampak keputusan finansial.
+Dokumen ini digunakan sebagai pedoman bagi tim pengembang dalam proses analisis, perancangan, implementasi, pengujian, dan pemeliharaan sistem.
 
 ---
 
-### 1.3 Definisi dan Singkatan
+## 1.2 Ruang Lingkup
+
+Econiverse merupakan platform berbasis web yang membantu pengguna memahami perilaku ekonomi mereka melalui survei, analisis data, AI Financial Coach, serta sistem gamifikasi yang bertujuan meningkatkan kebiasaan finansial yang positif.
+
+Sistem menyediakan fitur:
+
+- Economic Personality Test
+- AI Financial Coach
+- Daily Mission
+- Streak System
+- Achievement System
+- Personality Evolution
+- Dashboard Analisis
+
+---
+
+## 1.3 Definisi Istilah
 
 | Istilah | Definisi |
 |----------|----------|
 | User | Pengguna aplikasi |
-| Admin | Pengelola sistem |
-| Transaksi | Catatan pemasukan atau pengeluaran |
-| Financial Alternate Universe | Simulasi kondisi keuangan berdasarkan skenario alternatif |
-| Dashboard | Halaman ringkasan kondisi keuangan |
+| Personality Test | Survei untuk menentukan tipe perilaku ekonomi pengguna |
+| AI Financial Coach | Agen AI yang memberikan analisis dan rekomendasi |
+| Streak | Catatan konsistensi aktivitas pengguna |
+| Achievement | Penghargaan yang diperoleh pengguna |
+| Dashboard | Halaman utama yang menampilkan ringkasan aktivitas pengguna |
 
 ---
 
-## 2. Deskripsi Umum
+# 2. Deskripsi Umum
 
-### 2.1 Perspektif Produk
+## 2.1 Perspektif Produk
 
-Econiverse merupakan aplikasi web yang berjalan melalui browser dan terhubung dengan database PostgreSQL untuk menyimpan seluruh data pengguna dan transaksi.
+Econiverse merupakan aplikasi web yang dapat diakses melalui browser dan menggunakan PostgreSQL sebagai database utama.
+
+Sistem dirancang untuk membantu pengguna mengenali kebiasaan ekonomi serta meningkatkan kualitas pengambilan keputusan ekonomi melalui pendekatan behavioral economics.
 
 ---
 
-### 2.2 Karakteristik Pengguna
+## 2.2 Karakteristik Pengguna
 
-#### Mahasiswa
+### Mahasiswa
 
-- Memiliki penghasilan atau uang saku terbatas.
-- Membutuhkan pengelolaan keuangan yang lebih baik.
+- Memiliki pendapatan terbatas.
+- Sedang belajar mengelola keuangan.
 
-#### Freelancer
+### Freelancer
 
 - Pendapatan tidak tetap.
-- Membutuhkan perencanaan finansial.
+- Membutuhkan pengelolaan keuangan yang lebih baik.
 
-#### Karyawan
+### Karyawan
 
-- Memiliki pendapatan rutin.
-- Membutuhkan kontrol terhadap pengeluaran.
-
----
-
-### 2.3 Batasan Sistem
-
-- Sistem berbasis web.
-- Memerlukan koneksi internet.
-- Data tersimpan pada PostgreSQL.
-- Pengguna harus memiliki akun untuk mengakses fitur utama.
+- Ingin meningkatkan kualitas kebiasaan finansial.
 
 ---
 
-## 3. Kebutuhan Fungsional
+## 2.3 Batasan Sistem
 
-### FR-01 Registrasi Pengguna
+- Sistem hanya dapat diakses melalui internet.
+- Pengguna wajib memiliki akun.
+- Analisis AI berdasarkan data yang dimasukkan pengguna.
+- Sistem tidak digunakan untuk transaksi keuangan nyata.
 
-#### Deskripsi
+---
+
+# 3. Kebutuhan Fungsional
+
+## FR-01 Registrasi Pengguna
+
+### Deskripsi
 
 Pengguna dapat membuat akun baru.
 
-#### Input
+### Input
 
 - Nama
 - Email
 - Password
 
-#### Output
+### Output
 
 - Akun berhasil dibuat.
 
 ---
 
-### FR-02 Login
+## FR-02 Login
 
-#### Deskripsi
+### Deskripsi
 
 Pengguna dapat masuk ke sistem.
 
-#### Input
+### Input
 
 - Email
 - Password
 
-#### Output
+### Output
 
 - Dashboard pengguna.
 
 ---
 
-### FR-03 Logout
+## FR-03 Logout
 
-#### Deskripsi
+### Deskripsi
 
 Pengguna dapat keluar dari sistem.
 
-#### Output
+### Output
 
-- Pengguna kembali ke halaman login.
-
----
-
-### FR-04 Menambah Transaksi
-
-#### Deskripsi
-
-Pengguna dapat menambahkan transaksi baru.
-
-#### Input
-
-- Tanggal
-- Kategori
-- Nominal
-- Jenis transaksi
-- Deskripsi
-
-#### Output
-
-- Data transaksi tersimpan.
+- Kembali ke halaman login.
 
 ---
 
-### FR-05 Mengubah Transaksi
+## FR-04 Economic Personality Test
 
-#### Deskripsi
+### Deskripsi
 
-Pengguna dapat memperbarui data transaksi.
+Pengguna dapat mengisi survei untuk menentukan tipe perilaku ekonomi.
 
-#### Output
+### Input
 
-- Data transaksi berhasil diperbarui.
+- Jawaban survei
 
----
+### Output
 
-### FR-06 Menghapus Transaksi
+- Hasil personality ekonomi
 
-#### Deskripsi
+### Personality Type
 
-Pengguna dapat menghapus transaksi.
-
-#### Output
-
-- Data transaksi berhasil dihapus.
-
----
-
-### FR-07 Melihat Riwayat Transaksi
-
-#### Deskripsi
-
-Pengguna dapat melihat seluruh transaksi yang pernah dicatat.
-
-#### Output
-
-- Daftar transaksi.
+- The Saver
+- The Investor
+- The Rational Planner
+- The Impulsive Buyer
+- The Experience Seeker
+- The Risk Taker
 
 ---
 
-### FR-08 Dashboard Keuangan
+## FR-05 Menampilkan Hasil Personality
 
-#### Deskripsi
+### Deskripsi
 
-Sistem menampilkan ringkasan keuangan pengguna.
+Sistem menampilkan tipe personality pengguna.
 
-#### Output
+### Output
 
-- Total pemasukan
-- Total pengeluaran
-- Saldo
-- Grafik transaksi
-
----
-
-### FR-09 Kategori Transaksi
-
-#### Deskripsi
-
-Sistem menyediakan kategori transaksi.
-
-#### Kategori
-
-- Makanan
-- Transportasi
-- Pendidikan
-- Hiburan
-- Belanja
-- Kesehatan
-- Lainnya
+- Nama personality
+- Karakteristik
+- Kelebihan
+- Kekurangan
 
 ---
 
-### FR-10 Financial Alternate Universe
+## FR-06 AI Financial Coach
 
-#### Deskripsi
+### Deskripsi
 
-Sistem menghasilkan simulasi kondisi keuangan alternatif berdasarkan transaksi pengguna.
+Sistem menganalisis data pengguna dan memberikan rekomendasi.
 
-#### Contoh
+### Output
 
-Input:
-
-```text
-Kopi Harian Rp25.000
-```
-
-Skenario:
-
-```text
-Tidak membeli kopi selama 6 bulan
-```
-
-Output:
-
-```text
-Potensi tabungan Rp4.500.000
-```
+- Analisis perilaku
+- Kelebihan pengguna
+- Kekurangan pengguna
+- Saran pengembangan kebiasaan
 
 ---
 
-### FR-11 Simulasi Penghematan
+## FR-07 Dashboard
 
-#### Deskripsi
+### Deskripsi
 
-Sistem menghitung potensi penghematan dari pengurangan suatu kategori pengeluaran.
+Menampilkan informasi utama pengguna.
 
-#### Input
+### Output
 
-- Kategori
-- Persentase pengurangan
-
-#### Output
-
-- Potensi penghematan bulanan
-- Potensi penghematan tahunan
+- Personality Type
+- AI Insight
+- Progress Streak
+- Achievement
+- Daily Mission
 
 ---
 
-### FR-12 Grafik Keuangan
+## FR-08 Daily Mission
 
-#### Deskripsi
+### Deskripsi
 
-Sistem menampilkan visualisasi data transaksi.
+Sistem memberikan tugas harian kepada pengguna.
 
-#### Output
+### Contoh
 
-- Grafik pemasukan
-- Grafik pengeluaran
-- Grafik kategori transaksi
+- Menabung hari ini
+- Tidak melakukan pembelian impulsif
+- Menyelesaikan refleksi harian
+
+### Output
+
+- Progress misi
 
 ---
 
-## 4. Kebutuhan Non Fungsional
+## FR-09 Streak System
 
-### NFR-01 Kinerja
+### Deskripsi
+
+Mencatat konsistensi aktivitas pengguna.
+
+### Output
+
+- Jumlah streak
+- Riwayat streak
+
+---
+
+## FR-10 Achievement System
+
+### Deskripsi
+
+Sistem memberikan penghargaan atas pencapaian pengguna.
+
+### Output
+
+- Badge
+- Achievement
+
+### Contoh Badge
+
+- First Saving
+- Smart Saver
+- Financial Explorer
+- Financial Master
+
+---
+
+## FR-11 Personality Evolution
+
+### Deskripsi
+
+Menampilkan perubahan personality pengguna dari waktu ke waktu.
+
+### Output
+
+- Riwayat personality
+- Grafik perkembangan personality
+
+---
+
+## FR-12 Profil Pengguna
+
+### Deskripsi
+
+Pengguna dapat melihat dan mengubah informasi akun.
+
+### Output
+
+- Data profil
+- Pengaturan akun
+
+---
+
+# 4. Kebutuhan Non-Fungsional
+
+## NFR-01 Performance
 
 - Waktu respon maksimal 3 detik.
-- Sistem mampu menangani minimal 100 pengguna aktif.
+- Sistem mampu menangani minimal 100 pengguna aktif secara bersamaan.
 
 ---
 
-### NFR-02 Keamanan
+## NFR-02 Security
 
-- Password disimpan dalam bentuk hash.
-- Hanya pengguna yang terautentikasi dapat mengakses data pribadi.
-
----
-
-### NFR-03 Usability
-
-- Tampilan mudah digunakan.
-- Responsif pada desktop dan perangkat mobile.
+- Password disimpan menggunakan hashing.
+- Data pengguna hanya dapat diakses oleh pemilik akun.
+- Sistem menggunakan autentikasi yang aman.
 
 ---
 
-### NFR-04 Reliability
+## NFR-03 Reliability
 
-- Data transaksi tersimpan secara konsisten.
-- Sistem mampu melakukan validasi input.
-
----
-
-### NFR-05 Maintainability
-
-- Kode menggunakan struktur modular.
-- Mudah dikembangkan untuk fitur baru.
+- Sistem tersedia minimal 95% dari waktu operasional.
+- Data pengguna tersimpan secara konsisten.
 
 ---
 
-## 5. Use Case
+## NFR-04 Usability
 
-### User
+- Antarmuka mudah digunakan.
+- Navigasi sederhana.
+- Responsif pada desktop dan mobile.
+
+---
+
+## NFR-05 Maintainability
+
+- Struktur kode modular.
+- Mudah dikembangkan pada versi berikutnya.
+
+---
+
+# 5. Use Case
+
+## Pengguna
+
+### Authentication
 
 - Register
 - Login
 - Logout
-- Menambah transaksi
-- Mengubah transaksi
-- Menghapus transaksi
-- Melihat dashboard
-- Melihat grafik
-- Menggunakan Financial Alternate Universe
+
+### Personality System
+
+- Mengisi Personality Test
+- Melihat Hasil Personality
+
+### AI System
+
+- Melihat AI Insight
+- Menerima Rekomendasi
+
+### Gamification
+
+- Menyelesaikan Daily Mission
+- Mengumpulkan Achievement
+- Menjaga Streak
+
+### Monitoring
+
+- Melihat Dashboard
+- Melihat Personality Evolution
 
 ---
 
-## 6. Kebutuhan Perangkat Lunak
+# 6. Kebutuhan Perangkat Lunak
 
-### Frontend
+## Frontend
 
 - Next.js
 - TypeScript
 - Tailwind CSS
 
-### Backend
+## Backend
 
 - Next.js API Routes
 
-### Database
+## Database
 
 - PostgreSQL
 
-### Version Control
+## Authentication
+
+- NextAuth
+
+## AI Service
+
+- OpenAI API
+
+## Version Control
 
 - Git
 - GitHub
 
 ---
 
-## 7. Kriteria Keberhasilan
+# 7. Kriteria Keberhasilan
 
 Sistem dianggap berhasil apabila:
 
-- Pengguna dapat melakukan autentikasi.
-- Pengguna dapat melakukan CRUD transaksi.
-- Dashboard menampilkan data secara akurat.
-- Financial Alternate Universe menghasilkan simulasi yang sesuai.
-- Grafik transaksi dapat ditampilkan dengan benar.
+- Pengguna dapat menyelesaikan personality test.
+- Personality berhasil ditentukan oleh sistem.
+- AI Insight dapat ditampilkan.
+- Daily Mission berjalan dengan baik.
+- Streak tercatat dengan benar.
+- Achievement dapat diperoleh pengguna.
+- Dashboard menampilkan seluruh data secara akurat.
 
 ---
 
-## 8. Pengembangan Selanjutnya
+# 8. Pengembangan Selanjutnya
 
-Fitur yang dapat ditambahkan pada versi berikutnya:
+## Future Features
 
-- Financial Health Score
-- AI Financial Advisor
-- Target Tabungan
-- Export PDF
-- Notifikasi Pengingat Keuangan
-- Mobile Application
+- AI Chat Coach
+- Community Challenge
+- Economic Leaderboard
+- Habit Prediction
+- Social Sharing
+- Personal Financial Roadmap
 
 ---
 
-## Status Dokumen
+# Status Dokumen
 
-Versi: 1.0
+Versi : 1.0
 
-Status: Draft
+Status : Draft
 
-Tanggal: 2026
+Tahun : 2026
