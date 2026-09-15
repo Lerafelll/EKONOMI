@@ -1,314 +1,215 @@
-# 🌌 ECONIVERSE
+# 🧠 Econiverse
 
-> "Every financial decision creates a different future."
+> Discover Your Economic Personality, Improve Your Financial Habits.
 
-Econiverse adalah aplikasi pencatatan keuangan pribadi berbasis web yang tidak hanya membantu pengguna mencatat pemasukan dan pengeluaran, tetapi juga mensimulasikan berbagai kemungkinan kondisi keuangan melalui fitur unggulan **Financial Alternate Universe**.
+Econiverse adalah platform analisis perilaku ekonomi yang membantu pengguna memahami kebiasaan finansial mereka melalui Economic Personality Test, AI Financial Agent, dan sistem gamifikasi berbasis streak.
 
----
-
-## 📖 Tentang Proyek
-
-Sebagian besar aplikasi keuangan hanya menunjukkan kondisi keuangan saat ini.
-
-Econiverse melangkah lebih jauh dengan membantu pengguna memahami:
-
-- Dampak dari keputusan finansial.
-- Potensi penghematan.
-- Konsekuensi dari kebiasaan konsumsi.
-- Simulasi kondisi keuangan alternatif.
-
-Dengan demikian pengguna dapat mengambil keputusan ekonomi yang lebih baik berdasarkan data yang dimiliki.
+Berbeda dengan aplikasi keuangan biasa yang hanya mencatat transaksi, Econiverse berfokus pada analisis perilaku konsumen untuk membantu pengguna membangun kebiasaan finansial yang lebih baik.
 
 ---
 
-## ✨ Fitur Utama
+## 🚀 Latar Belakang
 
-### 🔐 Authentication
+Banyak orang mengetahui berapa banyak uang yang mereka miliki, tetapi tidak memahami mengapa mereka menghabiskan uang dengan cara tertentu.
 
-- Register
-- Login
-- Logout
+Econiverse membantu pengguna mengenali pola perilaku ekonomi, mengidentifikasi kebiasaan konsumsi, serta memberikan rekomendasi yang dipersonalisasi berdasarkan aktivitas dan hasil survei.
 
-### 💰 Transaction Management
+---
 
-- Tambah transaksi
-- Edit transaksi
-- Hapus transaksi
+# 🎯 Tujuan
+
+- Membantu pengguna memahami perilaku ekonomi mereka.
+- Mengidentifikasi kebiasaan konsumsi melalui survei dan aktivitas pengguna.
+- Memberikan rekomendasi finansial yang dipersonalisasi.
+- Meningkatkan motivasi pengguna dalam membangun kebiasaan finansial yang sehat.
+
+---
+
+# ✨ Fitur Utama
+
+## 🧩 Economic Personality Test
+
+Pengguna akan menjawab serangkaian pertanyaan terkait perilaku ekonomi dan konsumsi.
+
+Hasil survei akan mengelompokkan pengguna ke dalam tipe kepribadian ekonomi tertentu.
+
+### Tipe Personality
+
+- 🐿️ The Saver
+- 📈 The Investor
+- 🧠 The Rational Planner
+- 🛍️ The Impulsive Buyer
+- 🎉 The Experience Seeker
+- 🚀 The Risk Taker
+
+---
+
+## 🤖 AI Financial Agent
+
+AI Agent akan menganalisis:
+
+- Hasil personality test
+- Aktivitas pengguna
 - Riwayat transaksi
+- Pola pengeluaran
+- Target finansial
 
-### 📊 Dashboard
+Kemudian AI Agent memberikan:
 
-- Total pemasukan
-- Total pengeluaran
-- Saldo
-- Grafik transaksi
-- Ringkasan keuangan
+- Analisis perilaku ekonomi
+- Kelebihan dan kekurangan pengguna
+- Saran yang dipersonalisasi
+- Rekomendasi perbaikan kebiasaan
 
-### 🗂️ Category Management
-
-- Makanan
-- Transportasi
-- Pendidikan
-- Hiburan
-- Belanja
-- Kesehatan
-
-### 🌌 Financial Alternate Universe
-
-Fitur utama yang membedakan Econiverse dari aplikasi keuangan lainnya.
-
-Contoh simulasi:
-
-#### Skenario 1
+### Contoh Insight
 
 ```text
-Kopi Harian
-Rp25.000/hari
-```
+Anda termasuk The Impulsive Buyer.
 
-Simulasi:
+42% pengeluaran Anda berasal dari pembelian yang tidak direncanakan.
 
-```text
-Tidak membeli kopi selama 6 bulan
-```
-
-Hasil:
-
-```text
-Potensi tabungan:
-Rp4.500.000
-```
-
-#### Skenario 2
-
-```text
-Belanja Online
-Rp500.000/bulan
-```
-
-Simulasi:
-
-```text
-Mengurangi pengeluaran 50%
-```
-
-Hasil:
-
-```text
-Potensi penghematan:
-Rp3.000.000/tahun
+Rekomendasi:
+Kurangi transaksi impulsif dan gunakan metode 24-Hour Rule sebelum membeli barang non-prioritas.
 ```
 
 ---
 
-### 🧠 Economic Personality Test
-Survei berbasis perilaku ekonomi pengguna.
-Mengelompokkan pengguna ke dalam tipe kepribadian ekonomi tertentu.
-Menampilkan profil dan karakteristik finansial pengguna.
+## 🔥 Streak System
 
-🎭 **Role Personality**
-🐿️ The Saver
+Fitur gamifikasi yang membantu meningkatkan motivasi pengguna.
 
-Karakteristik:
--Suka menabung
--Jarang membeli barang impulsif
--Memikirkan masa depan
+### Saving Streak
 
-Kelebihan:
--Keuangan stabil
--Risiko rendah
+```text
+Hari ke-1 🔥
+Hari ke-7 🔥🔥🔥🔥🔥🔥🔥
+Hari ke-30 🏆
+```
 
-Kekurangan:
--Kadang terlalu pelit
--Sulit menikmati hasil kerja
+### Challenge Streak
 
-📈 The Investor
+- Menabung 7 Hari Berturut-turut
+- Tidak Belanja Impulsif 14 Hari
+- Konsisten Mencatat Aktivitas 30 Hari
 
-Karakteristik:
+### Achievement Badge
 
-Suka mengembangkan aset
-Berani mengambil risiko terukur
-Berpikir jangka panjang
-
-Kelebihan:
-
-Potensi pertumbuhan aset tinggi
-
-Kekurangan:
-
-Bisa terlalu optimis
-🛍️ The Impulsive Buyer
-
-Karakteristik:
-
-Sering membeli berdasarkan keinginan sesaat
-Mudah tergoda diskon
-
-Kelebihan:
-
-Fleksibel
-Menikmati pengalaman
-
-Kekurangan:
-
-Pengeluaran sulit dikontrol
-🧠 The Rational Planner
-
-Karakteristik:
-
-Membuat anggaran
-Selalu membandingkan harga
-
-Kelebihan:
-
-Sangat efisien
-
-Kekurangan:
-
-Terlalu lama mengambil keputusan
-🎉 The Experience Seeker
-
-Karakteristik:
-
-Lebih suka membeli pengalaman daripada barang
-
-Contoh:
-
-Travel
-Konser
-Nongkrong
-Workshop
-🚀 The Risk Taker
-
-Karakteristik:
-
-Berani mencoba peluang baru
-Berani mengambil risiko ekonomi
-
-### 🤖 AI Financial Agent
-Menganalisis pola perilaku pengguna secara otomatis.
-Mengidentifikasi kelebihan dan kekurangan dalam kebiasaan finansial pengguna.
-Memberikan rekomendasi dan saran yang dipersonalisasi.
-
-### 🔥 Financial Streak System
-Mencatat konsistensi pengguna dalam menabung dan mencapai target finansial.
-Memberikan penghargaan berupa badge, level, atau achievement.
-Meningkatkan motivasi pengguna agar tetap aktif dan disiplin dalam mengelola keuangan.
-
-## 🎯 Tujuan Proyek
-
-- Membantu pengguna mengelola keuangan pribadi.
-- Memberikan insight terhadap pola pengeluaran.
-- Membantu pengguna memahami konsekuensi dari keputusan finansial.
-- Menyediakan simulasi ekonomi berbasis data transaksi.
+- 🥉 Smart Beginner
+- 🥈 Financial Explorer
+- 🥇 Financial Master
 
 ---
 
-## 👥 Target Pengguna
+## 📈 Dashboard
 
-- Mahasiswa
-- Freelancer
-- Karyawan
-- Pengguna yang ingin meningkatkan literasi keuangan
+Dashboard menampilkan:
+
+- Economic Personality
+- Progress Streak
+- Financial Activity
+- AI Insight
+- Achievement Badge
 
 ---
 
-## 🏗️ Tech Stack
+## 🌱 Personality Evolution
 
-### Frontend
+Econiverse tidak hanya menentukan personality pengguna sekali saja.
+
+Sistem akan memantau perubahan perilaku ekonomi dari waktu ke waktu.
+
+### Contoh
+
+```text
+Januari
+The Impulsive Buyer
+
+Maret
+The Rational Planner
+
+Juni
+The Investor
+```
+
+Pengguna dapat melihat perkembangan kebiasaan finansial mereka secara berkala.
+
+---
+
+# 🏗️ Tech Stack
+
+## Frontend
 
 - Next.js
 - TypeScript
 - Tailwind CSS
 
-### Backend
+## Backend
 
 - Next.js API Routes
 
-### Database
+## Database
 
 - PostgreSQL
 
-### Version Control
+## Version Control
 
-- Git & GitHub
-
----
-
-## 📂 Struktur Proyek
-
-
-```
+- Git
+- GitHub
 
 ---
 
-## 🚀 Instalasi
-
-Clone repository:
-
-```bash
-git clone https://github.com/Lerafelll/EKONOMI.git
-```
-
-Masuk ke folder project:
-
-```bash
-cd econiverse
-```
-
-Install dependency:
-
-```bash
-npm install
-```
-
-Jalankan project:
-
-```bash
-npm run dev
-```
-
-Buka browser:
+# 📂 Struktur Folder
 
 ```text
-http://localhost:3000
+
 ```
 
 ---
 
-## 📌 MVP Features
+# 👥 Target Pengguna
 
-- [x] Login
-- [x] Register
-- [x] CRUD Transaksi
-- [x] Dashboard
-- [x] Grafik Keuangan
-- [x] Financial Alternate Universe
-
----
-
-## 🔮 Future Development
-
-- Financial Health Score
-- AI Financial Assistant
-- Budget Planning
-- Target Tabungan
-- Export PDF
-- Mobile App
+- Mahasiswa
+- Pelajar
+- Freelancer
+- Karyawan
+- Pengguna yang ingin meningkatkan literasi ekonomi dan finansial
 
 ---
 
-## 👨‍💻 Team
+# 🎓 Nilai Ekonomi yang Diangkat
+
+- Consumer Behavior
+- Economic Decision Making
+- Financial Literacy
+- Opportunity Cost
+- Spending Habits
+- Behavioral Economics
+
+---
+
+# 🔮 Future Development
+
+- AI Chat Financial Coach
+- Goal Tracking
+- Financial Challenges
+- Community Leaderboard
+- Economic Simulation
+- AI Habit Prediction
+
+---
+
+# 👨‍💻 Development Team
 
 | Role | Responsibility |
 |--------|--------|
-| Product Master | Requirement, Timeline, Monitoring, Testing & Validation|
-| Frontend Developer | UI & UX |
-| Backend Developer | API Development, Database Design |
+| Product Master | Requirement, Planning, Testing & Quality Assurance|
+| Frontend Developer | UI/UX & Frontend Development |
+| Backend Developer | API , Database Design & Business Logic |
+
 
 
 ---
 
-## 📄 License
+# 📄 License
 
-This project was developed for academic purposes and learning activities.
+This project was developed for educational and academic purposes.
