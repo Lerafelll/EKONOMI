@@ -1,4 +1,4 @@
-# 🧠 Econiverse
+# 🧠 Econary
 
 > Discover Your Economic Personality, Improve Your Financial Habits.
 
